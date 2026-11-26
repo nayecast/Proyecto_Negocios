@@ -1,0 +1,12 @@
+orden,control,observado,esperado,resultado
+1,Registros médicos importados completos,37,37,CORRECTO
+2,Registros de población importados completos,72864,72864,CORRECTO
+3,Totales poblacionales únicos para las 24 provincias,24 filas / 24 provincias,24 filas / 24 provincias,CORRECTO
+4,Cantidades poblacionales válidas en total y grupos de edad,0,0 valores inválidos,CORRECTO
+5,Correspondencia médica única para las 24 provincias,24 filas / 24 provincias,24 filas / 24 provincias,CORRECTO
+6,Cantidades médicas completas y numéricas,0,0 valores inválidos,CORRECTO
+7,Total poblacional igual a suma de 21 grupos por provincia,0,0 provincias con diferencia,CORRECTO
+8,Población positiva en todas las provincias,0,0 provincias con población no positiva,CORRECTO
+9,Suma médica provincial compatible con total nacional publicado,0,Diferencia absoluta de hasta 12 por redondeo,CORRECTO
+10,Tabla final con 24 provincias y año 2021,24 filas / 2021-2021,24 filas / 2021-2021,CORRECTO
+11,Tasas finales verificadas con la fórmula,0,0 tasas fuera de tolerancia de redondeo,CORRECTO

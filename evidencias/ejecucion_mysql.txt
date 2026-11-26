@@ -1,0 +1,65 @@
+ARCHIVO 01_estructura.sql
+
+ARCHIVO 02_carga_fuentes.sql
+fuente	filas_cargadas
+Médicos	37
+Población	72864
+
+ARCHIVO 03_transformar_integrar.sql
+
+ARCHIVO 04_resultados_validacion.sql
+provincia	anio	poblacion	medicos_ponderados_publicados	medicos_por_10000_aprox
+Azuay	2021	825773	2448	29.64
+Bolívar	2021	206608	422	20.43
+Cañar	2021	237790	662	27.84
+Carchi	2021	182445	302	16.55
+Chimborazo	2021	495781	1193	24.06
+Cotopaxi	2021	475870	981	20.61
+El Oro	2021	738399	1551	21.00
+Esmeraldas	2021	593324	1026	17.29
+Galápagos	2021	29148	113	38.77
+Guayas	2021	4601037	9606	20.88
+Imbabura	2021	482224	927	19.22
+Loja	2021	496526	1529	30.79
+Los Ríos	2021	948792	1432	15.09
+Manabí	2021	1659426	3569	21.51
+Morona Santiago	2021	196157	628	32.02
+Napo	2021	132987	418	31.43
+Orellana	2021	182673	417	22.83
+Pastaza	2021	112771	407	36.09
+Pichincha	2021	3217582	8952	27.82
+Santa Elena	2021	396709	628	15.83
+Santo Domingo de los Tsáchilas	2021	509041	1084	21.29
+Sucumbíos	2021	207728	519	24.98
+Tungurahua	2021	571693	1360	23.79
+Zamora Chinchipe	2021	113912	373	32.74
+orden	control	observado	esperado	resultado
+1	Registros médicos importados completos	37	37	CORRECTO
+2	Registros de población importados completos	72864	72864	CORRECTO
+3	Totales poblacionales únicos para las 24 provincias	24 filas / 24 provincias	24 filas / 24 provincias	CORRECTO
+4	Cantidades poblacionales válidas en total y grupos de edad	0	0 valores inválidos	CORRECTO
+5	Correspondencia médica única para las 24 provincias	24 filas / 24 provincias	24 filas / 24 provincias	CORRECTO
+6	Cantidades médicas completas y numéricas	0	0 valores inválidos	CORRECTO
+7	Total poblacional igual a suma de 21 grupos por provincia	0	0 provincias con diferencia	CORRECTO
+8	Población positiva en todas las provincias	0	0 provincias con población no positiva	CORRECTO
+9	Suma médica provincial compatible con total nacional publicado	0	Diferencia absoluta de hasta 12 por redondeo	CORRECTO
+10	Tabla final con 24 provincias y año 2021	24 filas / 2021-2021	24 filas / 2021-2021	CORRECTO
+11	Tasas finales verificadas con la fórmula	0	0 tasas fuera de tolerancia de redondeo	CORRECTO
+poblacion_total	medicos_total_publicado	tasa_nacional_aprox
+17614396	40547	23.02
+filas_medicos_originales	filas_medicos_provinciales	filas_presentacion_excluidas	hojas_datos_poblacion	filas_poblacion_2021_ambos_sexos
+37	24	13	72	528
+registro_csv	provincia_original	cantidad_medicos_original
+1		
+2	Cuadro 3.1.4\nPersonal médico que trabaja en establecimientos de salud por tiempo, según regiones, provincias y área\nAño 2021.	
+3	 Regiones y provincias	Total médicos1/
+4		
+5	Total Nacional	 40,547 
+6	Región Sierra	 19,859 
+18	Región Costa	 17,813 
+25	Región Amazónica	 2,762 
+32	Región Insular	 113 
+34		
+35	1/La tasa de médicos se homologa la fórmula de cálculo en el año 2014 por la Comisión de Salud, en la  que se incluye médicos posgradistas, rurales, residentes y se pondera en relación a las horas de trabajo.\nVer resolución de la Comisión Interinstitucional de Estadísticas de Salud - CIES 003-201	
+36	Los datos presentados se registran de acuerdo al Clasificador Geográfico Estadístico del año 2025.	
+37	Fuente: Registro Estadístico de Recursos y Actividades de Salud 2021.	
